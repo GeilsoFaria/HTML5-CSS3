@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'fonteandroid';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-image: linear-gradient(to top, #1F6E41, #247D4B, #2DA060, #3AD17E);
+}
+
+header>nav {
+    background-color: #1A5C38;
+    text-decoration: none;
+    padding: 5px;
+}
+
+header>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+
+header>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: 'fonteandroid', Arial, sans-serif;
+    font-weight: normal;
+    color: #2A6746;
+}
+
+h2 {
+    font-family: 'fonteandroid', Arial, sans-serif;
+    font-weight: normal;
+    color: #2A6746;
+
+}
+
+main {
+    background-color: #84E1AD;
+}
+
+#videoMain {
+    background-color: #1A5C38;
+}
