@@ -30,6 +30,13 @@
         thead, tfoot{
             background-color: lightblue;
         }
+        tbody tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+        /*Usando hover para caso nao tivesse nth-child, como possui, então foi usado apenas para aprendizado*/
+        tbody tr:hover{
+            background-color: lightseagreen
+        }
         td,th{
             border: 1px solid black;
             padding: 10px;
