@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        h1{
+
+        h1,h2,p {
             text-align: center;
         }
-        table{
+
+        table {
             border: 1px solid black;
             border-collapse: collapse;
             width: 500px;
+            position: relative;
             margin: auto;
         }
-        caption{
+
+        caption {
             border: 1px solid black;
             border-collapse: collapse;
             text-align: center;
@@ -27,29 +32,42 @@
             font-weight: bold;
             padding: 10px;
         }
-        thead, tfoot{
+
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
             background-color: lightblue;
         }
-        tbody tr:nth-child(2n){
+
+        thead,
+        tfoot {
+            background-color: lightblue;
+        }
+
+        tbody tr:nth-child(2n) {
             background-color: lightgrey;
         }
+
         /*Usando hover para caso nao tivesse nth-child, como possui, então foi usado apenas para aprendizado*/
-        tbody tr:hover{
+        tbody tr:hover {
             background-color: lightseagreen
         }
-        td,th{
+
+        td,
+        th {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
             vertical-align: middle;
         }
-        .numero{
+
+        .numero {
             text-align: right;
 
         }
-        
     </style>
 </head>
+
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!-- Anatomia tabelas grandes 
@@ -120,82 +138,130 @@
                 <td>Santa Catarina</td>
                 <td class="numero">7 609 601</td>
             </tr>
-           <tr>
+            <tr>
                 <td>Goiás</td>
                 <td class="numero">7 055 228</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Maranhão</td>
                 <td class="numero">6 775 152</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Paraíba</td>
                 <td class="numero">3 974 495</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Amazonas</td>
                 <td class="numero">3 941 175</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Espírito Santo</td>
                 <td class="numero">3 833 486</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Mato Grosso</td>
                 <td class="numero">3 658 813</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Rio Grande do Norte</td>
                 <td class="numero">3 302 406</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Piauí</td>
                 <td class="numero">3 269 200</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Alagoas</td>
                 <td class="numero">3 127 511</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Distrito Federal</td>
                 <td class="numero">2 817 068</td>
-           </tr>
-           <tr>
-                <td><img src="bandeira-ms.svg" alt="bandeira do estado do Mato Grosso do Sul" style="width: 15px; height: 15px;"> Mato Grosso do Sul</td>
+            </tr>
+            <tr>
+                <td><img src="bandeira-ms.svg" alt="bandeira do estado do Mato Grosso do Sul"
+                        style="width: 15px; height: 15px;"> Mato Grosso do Sul</td>
                 <td class="numero">2 756 700</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Sergipe</td>
                 <td class="numero">2 209 558</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Rondônia</td>
                 <td class="numero">1 581 016</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Tocantins</td>
                 <td class="numero">1 511 459</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Acre</td>
                 <td class="numero">830 026</td>
             </tr>
-           <tr>
+            <tr>
                 <td>Amapá</td>
                 <td class="numero">733 508</td>
             </tr>
-           <tr>
+            <tr>
                 <td>Roraima</td>
                 <td class="numero">636 303</td>
-           </tr>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
-                    <td class="numero"><strong>203 062 512</strong></td>
+                <td class="numero"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
     </table>
-    
+    <h2>Teste de rolagem com sticky</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deserunt necessitatibus exercitationem iste quasi
+        eum quisquam id, possimus dicta! Obcaecati quia voluptate nobis dolorem ratione ad harum atque porro? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit aperiam vel temporibus dolorum veniam
+        aspernatur vero nemo porro, quis est maxime saepe? Quam, sed reiciendis. Tempore quibusdam possimus doloremque.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab consectetur ullam, ut consequatur hic commodi,
+        voluptate nemo facilis repellat aliquid, deleniti provident amet quas? Dolores eligendi minima perferendis
+        repudiandae qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum amet deserunt cumque
+        asperiores aspernatur sequi expedita totam, officiis hic enim illo, facere quae alias, quaerat culpa ex tempore
+        quo!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deserunt necessitatibus exercitationem iste quasi
+        eum quisquam id, possimus dicta! Obcaecati quia voluptate nobis dolorem ratione ad harum atque porro? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit aperiam vel temporibus dolorum veniam
+        aspernatur vero nemo porro, quis est maxime saepe? Quam, sed reiciendis. Tempore quibusdam possimus doloremque.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab consectetur ullam, ut consequatur hic commodi,
+        voluptate nemo facilis repellat aliquid, deleniti provident amet quas? Dolores eligendi minima perferendis
+        repudiandae qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum amet deserunt cumque
+        asperiores aspernatur sequi expedita totam, officiis hic enim illo, facere quae alias, quaerat culpa ex tempore
+        quo!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deserunt necessitatibus exercitationem iste quasi
+        eum quisquam id, possimus dicta! Obcaecati quia voluptate nobis dolorem ratione ad harum atque porro? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit aperiam vel temporibus dolorum veniam
+        aspernatur vero nemo porro, quis est maxime saepe? Quam, sed reiciendis. Tempore quibusdam possimus doloremque.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab consectetur ullam, ut consequatur hic commodi,
+        voluptate nemo facilis repellat aliquid, deleniti provident amet quas? Dolores eligendi minima perferendis
+        repudiandae qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum amet deserunt cumque
+        asperiores aspernatur sequi expedita totam, officiis hic enim illo, facere quae alias, quaerat culpa ex tempore
+        quo!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deserunt necessitatibus exercitationem iste quasi
+        eum quisquam id, possimus dicta! Obcaecati quia voluptate nobis dolorem ratione ad harum atque porro? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit aperiam vel temporibus dolorum veniam
+        aspernatur vero nemo porro, quis est maxime saepe? Quam, sed reiciendis. Tempore quibusdam possimus doloremque.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab consectetur ullam, ut consequatur hic commodi,
+        voluptate nemo facilis repellat aliquid, deleniti provident amet quas? Dolores eligendi minima perferendis
+        repudiandae qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum amet deserunt cumque
+        asperiores aspernatur sequi expedita totam, officiis hic enim illo, facere quae alias, quaerat culpa ex tempore
+        quo!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deserunt necessitatibus exercitationem iste quasi
+        eum quisquam id, possimus dicta! Obcaecati quia voluptate nobis dolorem ratione ad harum atque porro? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit aperiam vel temporibus dolorum veniam
+        aspernatur vero nemo porro, quis est maxime saepe? Quam, sed reiciendis. Tempore quibusdam possimus doloremque.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab consectetur ullam, ut consequatur hic commodi,
+        voluptate nemo facilis repellat aliquid, deleniti provident amet quas? Dolores eligendi minima perferendis
+        repudiandae qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum amet deserunt cumque
+        asperiores aspernatur sequi expedita totam, officiis hic enim illo, facere quae alias, quaerat culpa ex tempore
+        quo!</p>
+
 </body>
+
 </html>
