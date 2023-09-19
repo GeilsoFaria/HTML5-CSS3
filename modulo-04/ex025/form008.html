@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+
+<body>
+    <h1>Elemento Output com formulário</h1>
+    <form action="" method="get">
+        <p>
+            <label for="idNum1">Digite o primeiro número</label>
+            <input type="number" name="num1" id="idNum1" required min="0" max="50" oninput="idSoma.innerHTML = Number(idNum1.value) + Number(idNum2.value)">
+        </p>
+        <p>
+            <label for="idNum2">Digite o segundo número</label>
+            <input type="number" name="num2" id="idNum2" required min="0" max="50" oninput="idSoma.innerHTML = Number(idNum1.value) + Number(idNum2.value)"> 
+        </p>
+        <p>
+            <label for="idSoma">Soma =</label>
+            <output name="soma" id="idSoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
