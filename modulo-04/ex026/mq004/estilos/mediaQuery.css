@@ -1,5 +1,74 @@
 @charset "UTF-8";
 
-/*
-    Todas as demais mídias
-*/
+/*Media type p/ impressoras*/
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg);/*Desnecessário*/
+    }
+    main {
+        border: 2px solid black;
+    } 
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main::after {
+        content: 'Impressão feita através do site';
+        text-decoration: underline;
+    }
+    img#idPhone {display: none;}
+    img#idTablet {display: none;}
+    img#idImpressora {display: block;}
+    img#idComputador {display: none;}
+    img#idTelevisão {display: none;}
+}
+/*  Media type tela e media feature com 
+    device breakpoint p/ telas pequenas*/
+@media only screen and (max-width:600px){
+     /*Configs feitas no arquivo style.css*/
+}
+/*Celulares*/
+@media only screen and (min-width:600px) {
+    /*Configs feitas no arquivo style.css*/
+}
+/*Tables*/
+@media only screen and (min-width:768px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#idPhone {display: none;}
+    img#idTablet {display: block;}
+    img#idImpressora {display: none;}
+    img#idComputador {display: none;}
+    img#idTelevisão {display: none;}
+}
+
+/*Desktops*/
+@media only screen and (min-width:992px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#idPhone {display: none;}
+    img#idTablet {display: none;}
+    img#idImpressora {display: none;}
+    img#idComputador {display: block;}
+    img#idTelevisão {display: none;}    
+}
+/*Telas grandes*/
+@media only screen and (min-width:1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg)
+    }
+    main {
+        width: 700px;
+    }
+    img#idPhone {display: none;}
+    img#idTablet {display: none;}
+    img#idImpressora {display: none;}
+    img#idComputador {display: none;}
+    img#idTelevisão {display: block;}
+}
