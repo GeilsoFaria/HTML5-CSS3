@@ -11,8 +11,20 @@ body ,html {
 header {
     background-color: gray;
 }
-menu {
+#burguer {
+    background-color: rgb(40, 40, 40);
     display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#burguer:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+menu {
+    display: none;
 }
 header > h1 {
     padding: 10px;
