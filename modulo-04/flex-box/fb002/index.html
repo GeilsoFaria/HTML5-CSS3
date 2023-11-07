@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        .container {
+            height: 500px;
+            /* width: 400px; */
+            padding: 16px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row nowrap;
+            align-content: center;
+            gap: 10px 30px;
+
+        }
+        div.bloco1 {
+            order: 0;
+            /* flex-grow: 0; 
+            flex-shrink: 1;
+            flex-basis: auto; */
+            flex: 0 1 auto;
+            align-self: flex-end;
+
+            background-color: blue;
+            padding: 5px;
+            width: 150px;
+            height: 40px;
+            
+        }
+        div.bloco2 {
+            order: 0;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: flex-start;
+
+            background-color: purple;
+            padding: 5px;
+            width: 150px;
+            height: 40px;
+        }
+        div.bloco3 {
+            order: 0;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+
+            background-color: lightcoral;
+            padding: 5px;
+            width: 150px;
+            height: 40px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="bloco1">align-self: flex-end</div>
+        <div class="bloco2">align-self: flex-start</div>
+        <div class="bloco3">align-content: center</div>
+        <!--<div class="bloco1">4</div>
+         <div class="bloco2">5</div>
+        <div class="bloco3">6</div>
+        <div class="bloco1">7</div>
+        <div class="bloco2">8</div>
+        <div class="bloco3">9</div>
+        <div class="bloco1">10</div>
+        <div class="bloco2">11</div>
+        <div class="bloco3">12</div> -->
+    </main>
+</body>
+</html>
